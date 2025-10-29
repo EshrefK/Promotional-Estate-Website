@@ -31,22 +31,22 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section id="hero" className="pt-32 pb-20 px-4 bg-linear-to-br from-blue-50 to-white">
+      <section id="hero" className="pt-32 pb-20 px-4 bg-linear-to-br from-blue-50 to-white dark:from-zinc-900 dark:to-zinc-950">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-6">
             Hayalinizdeki Yaşam Alanı İçin
-            <span className="text-blue-600"> Doğru Adres</span>
+            <span className="text-blue-600 dark:text-blue-400"> Doğru Adres</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             Modern ve güvenilir emlak hizmetleri ile hayalinizdeki yaşam alanına ulaşın
           </p>
         </div>
       </section>
 
       {/* Featured House - Split Sections with Images */}
-      <section id="properties" className="py-20 px-4 bg-linear-to-br from-white to-blue-50">
+      <section id="properties" className="py-20 px-4 bg-linear-to-br from-white to-blue-50 dark:from-zinc-950 dark:to-zinc-900">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-16" data-reveal>
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-16" data-reveal>
             Mülklerimiz
           </h2>
 
@@ -63,13 +63,13 @@ export default function Home() {
                 <Image src="/apartmentimages/insidehouse2.jpg" alt="İç mekan" width={1200} height={800} className="w-full h-56 md:h-80 object-cover card-image" />
               </div>
             </div>
-            <div className="rounded-3xl p-8 md:p-12 shadow-sm bg-stone-100/90 border border-stone-200/80" data-reveal>
-              <h3 className="text-3xl font-semibold text-gray-900 mb-4">Geniş ve Aydınlık Yaşam Alanı</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+            <div className="rounded-3xl p-8 md:p-12 shadow-sm bg-stone-100/90 dark:bg-zinc-800/80 border border-stone-200/80 dark:border-zinc-700" data-reveal>
+              <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Geniş ve Aydınlık Yaşam Alanı</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 Gün ışığını maksimum alan salon ve açılır-kapanır cam sistemleriyle geniş balkon, ferah bir yaşam sunuyor. Modern
                 zemin ve kapı detayları ile estetik ve fonksiyonellik bir arada.
               </p>
-              <ul className="grid sm:grid-cols-2 gap-3 text-gray-800">
+              <ul className="grid sm:grid-cols-2 gap-3 text-gray-800 dark:text-gray-300">
                 <li className="flex items-center gap-2"><span className="text-blue-600">•</span> 3+1 geniş plan</li>
                 <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Geniş balkon</li>
                 <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Yüksek tavan</li>
@@ -80,13 +80,13 @@ export default function Home() {
 
           {/* Row 2 (reverse) */}
           <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center mb-20">
-            <div className="order-2 md:order-1 rounded-3xl p-8 md:p-12 shadow-sm bg-rose-50/90 border border-rose-100/80" data-reveal>
-              <h3 className="text-3xl font-semibold text-gray-900 mb-4">Modern Mutfak ve Kaliteli Malzemeler</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+            <div className="order-2 md:order-1 rounded-3xl p-8 md:p-12 shadow-sm bg-rose-50/90 dark:bg-rose-900/20 border border-rose-100/80 dark:border-rose-800/40" data-reveal>
+              <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Modern Mutfak ve Kaliteli Malzemeler</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 Tam donanımlı mutfak, birinci sınıf dolap ve tezgâh malzemeleriyle şıklığı ve kullanışlılığı birlikte sunuyor.
                 Aynı zamanda mutfağa yakın ikinci balkon keyif alanınızı artırıyor.
               </p>
-              <ul className="grid sm:grid-cols-2 gap-3 text-gray-800">
+              <ul className="grid sm:grid-cols-2 gap-3 text-gray-800 dark:text-gray-300">
                 <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Ankastre set</li>
                 <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Geniş depolama</li>
                 <li className="flex items-center gap-2"><span className="text-blue-600">•</span> İkinci balkon</li>
@@ -119,17 +119,17 @@ export default function Home() {
                 <Image src="/apartmentimages/bathroom.jpg" alt="Banyo" width={800} height={600} className="w-full h-44 md:h-64 object-cover card-image" />
               </div>
             </div>
-            <div className="rounded-3xl p-8 md:p-12 shadow-sm bg-sky-50/90 border border-sky-100/80" data-reveal>
-              <h3 className="text-3xl font-semibold text-gray-900 mb-4">Site İmkanları ve Rahat Odalar</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+            <div className="rounded-3xl p-8 md:p-12 shadow-sm bg-sky-50/90 dark:bg-sky-900/20 border border-sky-100/80 dark:border-sky-800/40" data-reveal>
+              <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Site İmkanları ve Rahat Odalar</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 Site içi havuz, merdiven boşluklarında modern tasarım ve güvenli giriş-çıkışla konforlu bir yaşam. Rahat ve sessiz
                 odalar, dinlendiğiniz her anı daha iyi kılar.
               </p>
               <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">Site içi havuz</span>
-                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">Güvenlik</span>
-                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">Sessiz çevre</span>
-                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm">Otopark</span>
+                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-300 text-sm">Site içi havuz</span>
+                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-300 text-sm">Güvenlik</span>
+                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-300 text-sm">Sessiz çevre</span>
+                <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/20 dark:text-blue-300 text-sm">Otopark</span>
               </div>
             </div>
           </div>
@@ -137,15 +137,15 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-emerald-700">
+      <section id="contact" className="py-20 px-4 bg-zinc-900/60 dark:bg-amber-950/40">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-12" data-reveal>
             İletişim
           </h2>
           <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-            <div className="rounded-3xl p-8 md:p-10 bg-white/90 border border-emerald-200/70 shadow-sm" data-reveal>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Bize Ulaşın</h3>
-              <p className="text-gray-700 mb-6">
+            <div className="rounded-3xl p-8 md:p-10 bg-white/90 dark:bg-zinc-900/60 border border-emerald-200/70 dark:border-emerald-800/40 shadow-sm" data-reveal>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Bize Ulaşın</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
                 Aşağıdaki kanallardan hızlıca iletişim kurabilirsiniz. WhatsApp ile mesaj atabilir ya da doğrudan arayabilirsiniz.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -171,13 +171,13 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="mt-8 grid gap-3 text-gray-700">
-                <div className="flex items-center gap-2"><span className="text-emerald-600">•</span> Çalışma Saatleri: 09:00 - 19:00</div>
+              <div className="mt-8 grid gap-3 text-gray-700 dark:text-gray-300">
+                
                 <div className="flex items-center gap-2"><span className="text-emerald-600">•</span> E-posta: info@example.com</div>
               </div>
             </div>
 
-            <div className="rounded-3xl p-4 md:p-6 bg-emerald-600/20 border border-emerald-300 min-h-72 md:min-h-96 flex items-center justify-center text-center text-emerald-50" data-reveal>
+            <div className="rounded-3xl p-4 md:p-6 bg-emerald-100/70 dark:bg-emerald-700/80 border border-emerald-200/70 dark:border-emerald-700/40 min-h-72 md:min-h-96 flex items-center justify-center text-center text-gray-700 dark:text-gray-300" data-reveal>
               <div>
                 <p className="font-semibold mb-2">Google Harita Alanı</p>
                 <p className="text-sm opacity-80">Buraya Google Maps yerleştireceğiz. Embed kodunu verdiğinizde ekleyeceğim.</p>

@@ -76,6 +76,17 @@ nav {
   filter: saturate(1.05);
 }
 
+/* Smooth theme transitions */
+.theme-transition, .theme-transition * {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, fill 200ms ease, stroke 200ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-transition, .theme-transition * {
+    transition: none !important;
+  }
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

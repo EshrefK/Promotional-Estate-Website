@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +34,9 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/85 shadow-md py-4" : "bg-white/70 backdrop-blur py-6"
+        isScrolled
+          ? "bg-white/85 dark:bg-gray-900/95 shadow-md py-4"
+          : "bg-white/70 dark:bg-gray-900/70 backdrop-blur py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +52,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+              className="text-2xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
             >
               Al-Khatib Emlak
             </button>
@@ -59,19 +62,19 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-gray-700 hover:text-gray-900 transition-colors font-medium"
+              className="text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white transition-colors font-medium"
             >
               Ana Sayfa
             </button>
             <button
               onClick={() => scrollToSection("properties")}
-              className="text-gray-700 hover:text-gray-900 transition-colors font-medium"
+              className="text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white transition-colors font-medium"
             >
               Mülklerimiz
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-gray-900 transition-colors font-medium"
+              className="text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white transition-colors font-medium"
             >
               İletişim
             </button>
@@ -85,6 +88,7 @@ export default function Navbar() {
             >
               İletişime Geçin
             </Link>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,7 +96,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen((v) => !v)}
             aria-label={mobileOpen ? "Menüyü kapat" : "Menüyü aç"}
             aria-expanded={mobileOpen}
-            className="md:hidden text-gray-800 hover:text-gray-900"
+            className="md:hidden text-gray-800 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white"
           >
             <svg
               className="w-6 h-6"
@@ -117,13 +121,13 @@ export default function Navbar() {
             mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <div className="mt-3 rounded-xl border border-gray-200 bg-white/90 shadow-sm p-4 space-y-2">
+          <div className="mt-3 rounded-xl border border-gray-200 bg-white/90 dark:border-gray-800 dark:bg-gray-900/90 shadow-sm p-4 space-y-2">
             <button
               onClick={() => {
                 setMobileOpen(false);
                 scrollToSection("hero");
               }}
-              className="w-full text-left px-3 py-2 rounded-lg text-gray-800 hover:bg-gray-100"
+              className="w-full text-left px-3 py-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Ana Sayfa
             </button>
@@ -132,7 +136,7 @@ export default function Navbar() {
                 setMobileOpen(false);
                 scrollToSection("properties");
               }}
-              className="w-full text-left px-3 py-2 rounded-lg text-gray-800 hover:bg-gray-100"
+              className="w-full text-left px-3 py-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Mülklerimiz
             </button>
@@ -141,7 +145,7 @@ export default function Navbar() {
                 setMobileOpen(false);
                 scrollToSection("contact");
               }}
-              className="w-full text-left px-3 py-2 rounded-lg text-gray-800 hover:bg-gray-100"
+              className="w-full text-left px-3 py-2 rounded-lg text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               İletişim
             </button>
@@ -153,6 +157,9 @@ export default function Navbar() {
               >
                 İletişime Geçin
               </Link>
+              <div className="mt-2 flex justify-center">
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </div>
