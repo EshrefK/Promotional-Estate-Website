@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-3xl p-8 md:p-12 shadow-sm bg-stone-100/90 dark:bg-zinc-800/80 border border-stone-200/80 dark:border-zinc-700" data-reveal>
-              <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Geniş ve Aydınlık Yaşam Alanı</h3>
+            <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Geniş ve Aydınlık Yaşam Alanı</h3>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 Gün ışığını maksimum alan salon ve açılır-kapanır cam sistemleriyle geniş balkon, ferah bir yaşam sunuyor. Modern
                 zemin ve kapı detayları ile estetik ve fonksiyonellik bir arada.
@@ -133,6 +133,33 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* Row 4 */}
+          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center mb-20">
+            <div className="rounded-3xl p-8 md:p-12 shadow-sm bg-stone-100/90 dark:bg-zinc-800/80 border border-stone-200/80 dark:border-zinc-700 order-2 md:order-1" data-reveal>
+              <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Deniz ve Orman Manzaralı Lüks Daireler</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Hayalinizdeki yaşamı gerçek kılan; deniz ve orman manzarası, geniş ve modern bir mutfak, fonksiyonel depo alanları ve üst düzey sosyal imkanlar ile Atakum İncesu’nun en seçkin lokasyonunda benzersiz bir fırsat!
+              </p>
+              <ul className="grid sm:grid-cols-2 gap-3 text-gray-800 dark:text-gray-300">
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Deniz manzarası</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Orman manzarası</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Havuz</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Spor salonu</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Geniş depo</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> 200 m² kullanım alanı</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Atakum İncesu konum</li>
+                <li className="flex items-center gap-2"><span className="text-blue-600">•</span> Villalara yakın</li>
+              </ul>
+            </div>
+            <div className="grid gap-4 order-1 md:order-2" data-reveal>
+              <div className="rounded-2xl overflow-hidden shadow-sm bg-gray-100">
+                <Image src="/apartmentimages/kitchen2.jpg" alt="Mutfak" width={800} height={600} className="w-full h-44 md:h-64 object-cover card-image" />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-sm bg-gray-100">
+                <Image src="/apartmentimages/room2.jpg" alt="Oda" width={800} height={600} className="w-full h-44 md:h-64 object-cover card-image" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -142,46 +169,40 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-white mb-12" data-reveal>
             İletişim
           </h2>
-          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
-            <div className="rounded-3xl p-8 md:p-10 bg-white/90 dark:bg-zinc-900/60 border border-emerald-200/70 dark:border-emerald-800/40 shadow-sm" data-reveal>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Bize Ulaşın</h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-6">
+          <div className="grid md:grid-cols-[1fr_1.5fr] gap-10 md:gap-14 items-start">
+            <div className="rounded-3xl p-5 md:p-6 bg-white/90 dark:bg-zinc-900/60 border border-emerald-200/70 dark:border-emerald-800/40 shadow-sm order-2 md:order-1" data-reveal>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Bize Ulaşın</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-4 text-base">
                 Aşağıdaki kanallardan hızlıca iletişim kurabilirsiniz. WhatsApp ile mesaj atabilir ya da doğrudan arayabilirsiniz.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://wa.me/905555555555?text=Merhaba%2C%20ilanlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                  href="https://wa.me/905347732718?text=Merhaba%2C%20ilanlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 text-white px-6 py-3 hover:bg-emerald-700 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 text-white px-4 py-2 hover:bg-emerald-700 transition-colors text-sm"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                     <path d="M20.52 3.48A11.94 11.94 0 0 0 12.01 0C5.38 0 0 5.37 0 12c0 2.11.55 4.09 1.51 5.8L0 24l6.35-1.66A11.95 11.95 0 0 0 12 24c6.63 0 12.01-5.37 12.01-12 0-3.21-1.26-6.23-3.49-8.52zM12 22a9.94 9.94 0 0 1-5.06-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38A10 10 0 1 1 12 22zm5.32-7.18c-.29-.15-1.72-.86-1.98-.95-.27-.1-.47-.15-.67.14-.2.29-.77.95-.95 1.15-.18.2-.35.22-.64.08-.29-.15-1.22-.45-2.32-1.44-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.18-.29.28-.48.09-.2.05-.36-.03-.51-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.51.07-.78.36-.27.29-1.03 1.01-1.03 2.47 0 1.46 1.06 2.87 1.21 3.06.15.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.08 1.72-.7 1.97-1.39.24-.68.24-1.27.17-1.39-.07-.12-.26-.19-.55-.34z" />
                   </svg>
                   WhatsApp ile Yazın
                 </a>
                 <a
-                  href="tel:+905555555555"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 text-white px-6 py-3 hover:bg-blue-700 transition-colors"
+                  href="tel:+905347732718"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 transition-colors text-sm"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.17a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z" />
                   </svg>
                   Telefon Et
                 </a>
               </div>
-
-              <div className="mt-8 grid gap-3 text-gray-700 dark:text-gray-300">
-                
-                <div className="flex items-center gap-2"><span className="text-emerald-600">•</span> E-posta: info@example.com</div>
+              <div className="mt-6 grid gap-2 text-gray-700 dark:text-gray-300 text-sm">
+                <div className="flex items-center gap-2"><span className="text-emerald-600">•</span> E-posta: Alkhateebf091@gmail.com</div>
               </div>
             </div>
-
-            <div className="rounded-3xl p-4 md:p-6 bg-emerald-100/70 dark:bg-emerald-700/80 border border-emerald-200/70 dark:border-emerald-700/40 min-h-72 md:min-h-96 flex items-center justify-center text-center text-gray-700 dark:text-gray-300" data-reveal>
-              <div>
-                <p className="font-semibold mb-2">Google Harita Alanı</p>
-                <p className="text-sm opacity-80">Buraya Google Maps yerleştireceğiz. Embed kodunu verdiğinizde ekleyeceğim.</p>
-              </div>
+            <div className="rounded-3xl p-4 md:p-8 bg-emerald-100/70 dark:bg-emerald-700/80 border border-emerald-200/70 dark:border-emerald-700/40 flex items-center justify-center text-center text-gray-700 dark:text-gray-300 order-1 md:order-2" style={{ minHeight: '390px' }} data-reveal>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d14240.749991001163!2d36.196845554911285!3d41.379539807301086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d41.3800506!2d36.2053655!5e0!3m2!1str!2str!4v1761822372600!5m2!1str!2str" width="100%" height="420" style={{ border: 0, borderRadius: '1rem', minHeight: '320px', maxWidth: '700px' }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

@@ -41,6 +41,9 @@ export default function RootLayout({
             {modal}
           </div>
         </ThemeProvider>
+        <footer className="w-full pr-6 py-3 text-sm text-gray-400 bg-transparent select-none text-right">
+          Developed by <span className="font-semibold text-emerald-700">Ashraf Kurt</span> &copy; 2025
+        </footer>
       </body>
     </html>
   );

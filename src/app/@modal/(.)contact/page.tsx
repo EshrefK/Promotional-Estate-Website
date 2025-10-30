@@ -26,14 +26,14 @@ export default function ContactModal() {
               </svg>
             </button>
           </div>
-          <div className="p-6 grid md:grid-cols-2 gap-6">
+          <div className="px-8 py-10 bg-linear-to-br from-emerald-50 via-white to-blue-50 flex flex-col items-center gap-8">
             <div>
               <p className="text-gray-700 mb-4">
                 Bize hızlıca ulaşmak için WhatsApp veya telefon seçeneklerini kullanabilirsiniz. Ayrıca e-posta ile de iletişime geçebilirsiniz.
               </p>
               <div className="space-y-3">
                 <a
-                  href="https://wa.me/905555555555?text=Merhaba%2C%20ilanlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                  href="https://wa.me/905347732718?text=Merhaba%2C%20ilanlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 text-white px-4 py-2.5 hover:bg-emerald-700"
@@ -43,22 +43,15 @@ export default function ContactModal() {
                   </svg>
                   WhatsApp
                 </a>
-                <a href="tel:+905555555555" className="inline-flex items-center gap-2 rounded-lg bg-blue-600 text-white px-4 py-2.5 hover:bg-blue-700">
+                <a href="tel:+905347732718" className="inline-flex items-center gap-2 rounded-lg bg-blue-600 text-white px-4 py-2.5 hover:bg-blue-700 mt-4">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.17a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z" />
                   </svg>
                   Telefon
                 </a>
                 <div className="text-gray-700">
-                  <div className="mt-2">E-posta: info@example.com</div>
-                  <div className="mt-1">Çalışma Saatleri: 09:00 - 19:00</div>
+                  <div className="mt-2">E-posta: Alkhateebf091@gmail.com</div>
                 </div>
-              </div>
-            </div>
-            <div className="rounded-xl border border-gray-200 min-h-56 flex items-center justify-center text-center p-4">
-              <div>
-                <p className="font-medium text-gray-900">Google Harita Alanı</p>
-                <p className="text-sm text-gray-600">Embed kodunuzu iletin, buraya ekleyelim.</p>
               </div>
             </div>
           </div>
